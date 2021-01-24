@@ -1,0 +1,27 @@
+.price {
+    &__tarjeta {
+        background-color: $white;
+        color: $raisingblack;
+        margin: 2rem;
+
+        &--card-title {
+            padding: 2rem 0 0 0;
+        }
+
+        &--card-price {
+            padding: 2rem 0;
+            border-bottom: 1px solid $raisingblack;   
+        }
+
+        &--items {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding: 2rem;
+            border-bottom: 1px solid $raisingblack;
+        }
+
+        &--item {
+            padding: 1rem 0;
+        }
+    }
+}

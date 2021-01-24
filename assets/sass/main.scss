@@ -1,9 +1,20 @@
-  
-@import './abstracs/variables';
-@import './abstracs/mixins';
-@import './base/animations';
-@import './layout/body';
-@import './layout/main_section';
-@import './layout/footer';
-@import './layout/grid';
-@import './pages/home';
+//Abstracts
+@import 'abstracs/variables';
+@import 'abstracs/mixins';
+//Vendor
+//Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/animations';
+//Layout
+@import 'layout/grid';
+@import 'layout/navbar';
+@import 'layout/hero';
+@import 'layout/main-section';
+@import 'layout/footer';
+//Components
+@import 'components/buttons';
+@import 'components/cards';
+//Pages
+@import 'pages/home';
+//Themes

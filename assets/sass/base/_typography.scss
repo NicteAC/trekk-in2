@@ -1,0 +1,125 @@
+.navbar {
+    &__item {
+        &--title, &--button {
+            font-size: $font-size-large;
+            text-decoration: none;
+            color: $raisingblack;
+        }
+    }
+}
+
+.hero {
+    &__title {
+        font-size: $font-size-xxxx-large;
+        font-weight: $primary-font-bold;
+    }
+
+    &__text {
+        font-size: $font-size-large;
+        font-weight: $primary-font-regular;
+        line-height : 2.188rem;
+
+        @include respond-to ('md') {
+            font-size: $font-size-x-large;
+        }
+
+        @include respond-to ('xl') {
+            font-size: $font-size-xx-large;
+        }
+    }
+}
+
+.graph {
+    &__title {
+        font-size: $font-size-xx-large;
+        font-weight: $primary-font-bold;
+
+        @include respond-to ('xl') {
+            font-size: $font-size-xxxx-large;
+        }
+    }
+
+    &__text {
+
+        &--title {
+            font-size: $font-size-large;
+            font-weight: $primary-font-bold;
+            line-height : 2.1rem;
+
+            @include respond-to ('xl') {
+                font-size: $font-size-xx-large;
+                line-height : 3rem;
+            }
+        }
+        
+        &--paragraph {
+            font-size: $font-size-large;
+            font-weight: $primary-font-regular;
+            line-height : 1.9rem;
+    
+            @include respond-to ('lg') {
+                line-height : 2.1rem;
+            }
+
+            @include respond-to ('xl') {
+                font-size: $font-size-x-large;
+                line-height : 2.6rem;
+            }
+        }
+    }
+}
+
+.price {
+    &__titulo {
+        color: $white;
+        font-size: $font-size-xx-large;
+        font-weight: $primary-font-bold;
+
+        @include respond-to ('xl') {
+            font-size: $font-size-xxxxx-large;
+        }
+    }
+
+    &__card {
+
+        @include respond-to ('xl') {
+            padding: 5rem 0;
+        }
+    }
+
+    &__tarjeta {
+
+        &--card-title {
+            font-size: $font-size-x-large;
+            font-weight: $primary-font-regular;
+        }
+    
+        &--card-price {
+            font-size: $font-size-xxxxx-large;
+            font-weight: $primary-font-bold;
+    
+            @include respond-to ('lg') {
+                font-size: $font-size-xxx-large;
+            }
+            
+            @include respond-to ('xl') {
+                font-size: $font-size-xxxxx-large;
+            }
+        }
+    
+        &--item {
+            font-family: $secondary-font;
+            font-size: $font-size-large;
+            font-weight: $secondary-font-regular;
+        }
+    }
+}
+
+.footer {
+    font-size: $font-size-large;
+    color: $white;
+
+    @include respond-to ('sm') {
+        font-size: $font-size-x-large;
+    }
+}

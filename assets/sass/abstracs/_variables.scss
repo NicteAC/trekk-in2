@@ -29,10 +29,19 @@ $large: 20px;
 $medium: 16px;
 $small: 14px;
 $x-small: 12px;
-//Break point
-$breakpoint: (
-    'sm' :(min-width: 576px),   
-    'md' :(min-width: 768px),   
-    'lg' :(min-width: 992px),   
-    'xl' :(min-width: 1200px)
-);
+// Breakpoint
+$min-xs: 0;
+$min-sm: 576px;
+$min-md: 768px;
+$min-lg: 992px;
+$min-xl: 1200px;
+$min-xxl: 1400px;
+
+$breakpoints: (
+    'xs' : (min-width: $min-xs),
+    'sm' : (min-width: $min-sm),
+    'md' : (min-width: $min-md),
+    'lg' : (min-width: $min-lg),
+    'xl' : (min-width: $min-xl),
+    'xxl': (min-width: $min-xxl)
+) !default;

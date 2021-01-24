@@ -1,0 +1,128 @@
+.graph {
+    position:relative;
+    top: 25rem;
+    //background-color: brown;
+    
+
+    @include respond-to ('sm') {
+        top: 34rem;
+        //background-color: purple;
+    }
+
+    @include respond-to ('md') {
+        top: 42rem;
+        //background-color: yellow;
+    }
+
+    @include respond-to ('lg') {
+        top: 26rem;
+        //background-color: red;
+    }
+
+    @include respond-to ('xl') {
+        top: 30rem;
+        //background-color: blue;
+    }
+
+    @include respond-to ('xxl') {
+        top: 50rem;
+        //background-color:green;
+    }
+
+
+    &__title {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    &__svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red
+
+        &--graf {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        padding: 2rem 0;
+        text-align: left;       
+    }
+}
+
+
+
+.price {
+    position:relative;
+    top: 25rem;
+    left:0;
+
+    @include respond-to ('sm') {
+        top: 34rem;
+    }
+
+    @include respond-to ('md') {
+        top: 42rem;
+    }
+
+    @include respond-to ('lg') {
+        top: 27rem;
+    }
+
+    @include respond-to ('xl') {
+        top: 30rem;
+    }
+
+    @include respond-to ('xxl') {
+        top: 50rem;
+    }
+    
+    
+    &__bg-price {
+        position:absolute;
+        width: 100%;
+        z-index: -6;
+    }
+
+    &__titulo {
+        position: relative;
+        text-align: center;
+        top: 8rem;
+
+        @include respond-to ('md') {
+            top: 16rem;
+        }
+    }
+
+    &__card {
+        position:relative;
+        top: 13rem;
+        left: 0;
+        background-color:$licorice;
+        z-index: -5;
+
+        @include respond-to ('sm') {
+            top: 20rem;
+        }
+
+        @include respond-to ('md') {
+            top: 27rem;
+        }
+
+        @include respond-to ('lg') {
+            top: 20rem;
+        }
+
+        @include respond-to ('xl') {
+            top: 20rem;
+        }
+
+        @include respond-to ('xxl') {
+            top: 20rem;
+        }
+
+    }
+}

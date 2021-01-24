@@ -1,22 +1,18 @@
-/// Responsive breakpoint manager
-///@access public
-///@param {string} $breakpoint - Breakpoint
-///@requires $breakpoints
+/// Mixin to manage responsive breakpoints
+//https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
 
 @mixin respond-to($breakpoint) {
-    
-    @if $raw-query {
-        $query: if(
-            type-of($raw-query) == 'string',
-            unquote($raw-query),
-            inspect($raw-query)
-        );
-
-        @media #{$query} {
-            @content;
-        }
-    }   @else {
-        @error 'No value found for `#{$breakpoint}`. '
-          + 'Please make sure it is defined in `$breakpoints` map.';
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+      }
     }
-  } 
+    
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+  }

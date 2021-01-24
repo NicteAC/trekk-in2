@@ -48,99 +48,115 @@
           </div>
       </div>
   </nav> 
-        <!-- nav -->  
-      </div>
-      <div class="botones">
-        <nav class="navbar">
-        <form class="form-inline mr-sm-5">
-          <button type="button" class="btn btn-light">Iniciar sesión</button>
-          <button type="button" class="btn btn-primary">Registrate</button>          
-        </form>
-        </nav>
-      </div>
-   </div>
+  <header>
+    <section class="hero">
+        <object class="hero__bg-hero" data="assets/images/bg-hero.svg" type="">
+            <img src="assets/images/bg-hero.png" alt="Imagen PNG alternativa">
+        </object>
 
-  <div class="caja">
-      <section class="contenedor">
-        <section class="caja__columna">
-          <img src="assets/images/bg-hero.svg" alt="bg prices" width="auto">
-          <div class="texto">
-            <h1>Haz Trekking sin <br> Parar</h1>
-            <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición. </p>  
-          </div>
-        </section>
-      </section>
-
-
-      <h2>Características</h2>
-      <div class="container_caracteristicas">
-        <div class="row">
-          <div class="col-6 text-center">
-            <svg width="318" height="165" xmlns="http://www.w3.org/2000/svg">
-                <g class="bar-graph" fill-rule="evenodd">
-                    <path class="a-bar" fill="#EE9480" d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z"/>
-                    <path class="b-bar" fill="#2AB7CA" d="M168.94 53h34.778v108H168.94zM221.603 28h34.778v133h-34.778zM274.267 73h34.778v88h-34.778z"/>
-                    <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5" stroke-linecap="square"/>
-                </g>
-            </svg>
-          </div>
-          <div class="col-6 text-left">
-            <h2>Estadísticas de tu progreso</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, iste esse architecto adipisci aliquam natus! Esse dolorum consequatur molestias suscipit impedit autem porro, incidunt modi natus nostrum voluptas asperiores facere.</p>
-          </div>
-        </div>
-      </div>
-
-      
-      <img class="bg_price" src="assets/images/bg-price.svg" alt="bg price">
-      <h2 class="precios">Precios</h2>
-      <div class="container_prices">
-        <div class="row">
-          <div class="card" style="width: 18rem;">            
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="contenedor">
+            <div class="row">
+                <div class="col-xs-12 col-lg-9 col-xl-7">
+                    <h1 class="hero__title">Haz Trekking sin Parar</h1>
+                    <p class="hero__text">Con Trekk-in te despreocuparás de la estimacion de tu viaje, ya que con
+                        unos simples pasos podrás definir
+                        la mejor ruta a tomar con tus compañeros de expedición.</p>
+                </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem;">            
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </section>
+</header>
+
+<!--Contenido-->
+<main class="contenido">
+    <section class="graph">
+        <div class="contenedor">
+            <h2 class="graph__title">Características</h2>
+            <section class="row">
+                <div class="graph__svg col-xs-12 col-lg-6">
+                    <object class="graph__svg--graf" data="assets/images/bar-graph.svg" type="image/svg+xml">
+                        <img src="" alt="Imagen PNG alternativa">
+                    </object>
+                </div>
+                <div class="graph__text col-xs-12 col-lg-6">
+                    <h3 class="graph__text--title">Estádisticas de tu progreso</h3>
+                    <p class="graph__text--paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda corrupti voluptas beatae
+                        necessitatibus aspernatur provident ut autem error fugit esse tenetur tempore laboriosam,
+                        incidunt commodi nulla quam ullam, repellat repudiandae.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="price">
+        <object class="price__bg-price" data="assets/images/bg-price.svg" type="image/svg+xml">
+            <img src="assets/images/bg-price.png" alt="Imagen PNG alternativa">
+        </object>
+        <h2 class="price__titulo">Precios</h2>
+        <div class="price__card">
+            <div class="contenedor">
+                <div class="row">
+                    <div class="price__tarjeta col-xs-12 col-lg-6">
+                        <div class="contenedor">
+                            <h5 class="price__tarjeta--card-title">Trekk-in Free</h5>
+                            <h3 class="price__tarjeta--card-price">$ 0 / mes</h3>
+                            <div class="price__tarjeta--card-body">
+                                <ul class="price__tarjeta--items">
+                                    <li class="price__tarjeta--item">Ver mapas creados por usuarios</li>
+                                    <li class="price__tarjeta--item">Concretar con otros usuarios</li>
+                                    <li class="price__tarjeta--item"></li>
+                                    <li class="price__tarjeta--item"></li>
+                                    <li class="price__tarjeta--item"></li>
+                                </ul>
+                            </div>
+                            <div class="price__tarjeta--button">
+                                <a class="" href="#">Obtén Free</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price__tarjeta col-xs-12 col-lg-6">
+                        <div class="contenedor">
+                            <h5 class="price__tarjeta--card-title">Trekk-in Premium</h5>
+                            <h3 class="price__tarjeta--card-price">$ 3500 / mes</h3>
+                            <div class="price__tarjeta--card-body">
+                                <ul class="price__tarjeta--items">
+                                    <li class="price__tarjeta--item">Ver mapas creados por usuarios</li>
+                                    <li class="price__tarjeta--item">Concretar con otros usuarios</li>
+                                    <li class="price__tarjeta--item">Definir mejores rutas</li>
+                                    <li class="price__tarjeta--item">Mapas Offline</li>
+                                    <li class="price__tarjeta--item">Integracion con otras aplicaciones</li>
+                                </ul>
+                            </div>
+                            <div class="price__tarjeta--button">
+                                <a class="" href="#">Obtén Free</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
+</main>
+
+<!--Pie de pagina-->
+<footer>
+    <div class="footer container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <ul class="footer__items">
+                    <li>Legal</li>
+                    <li>Cookies</li>
+                    <li>Sobre anuncios</li>
+                </ul>
+            </div>
+            <div class="footer__span col-xs-12 col-lg-6">
+                <span>© 2021 Trekk-in SPA.</span>
+            </div>
 
         </div>
-      </div>
-    </div>     
-
-
-
-
-        
-    <footer>
-      <div class="footer container">
-          <div class="row">
-              <div class="col-xs-12 col-lg-6">
-                  <ul class="footer__items">
-                      <li>Legal</li>
-                      <li>Cookies</li>
-                      <li>Sobre anuncios</li>
-                  </ul>
-              </div>
-              <div class="footer__span col-xs-12 col-lg-6">
-                  <span> &copy; 2021 Trekk-in SPA.</span>
-              </div>
-
-          </div>
-      </div>
-  </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    </div>
+</footer>
+</body>
 </html>

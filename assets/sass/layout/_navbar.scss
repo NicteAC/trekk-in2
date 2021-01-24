@@ -1,0 +1,36 @@
+.navbar {
+    width: 100%;
+    padding: 1.5% 0;
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__registro {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        display:none;
+
+            @include respond-to('lg') {
+                display:contents;
+            }
+        
+        &--title, &--button {
+            padding: 0 1rem;
+        }
+    }
+
+    &__icono {
+        display:contents;
+
+        @include respond-to('lg') {
+            display:none;
+        }
+    }
+}

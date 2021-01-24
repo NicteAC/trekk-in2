@@ -1,7 +1,46 @@
-footer {
-    clear: both;
-    height: 50px;
-    background-color: #000000;
-    color: #ffffff;
-    padding-top: 10px;
+.footer {
+  position: relative;
+  top: 38rem;
+  padding: 3rem;
+  background-color: $raisingblack;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to ('sm') {
+      top: 54rem;
   }
+
+  @include respond-to ('md') {
+      top: 69rem;
+  }
+  
+  @include respond-to ('lg') {
+      top: 47rem;
+  }
+
+  @include respond-to ('xl') {
+      top: 50rem;
+  }
+
+  @include respond-to ('xxl') {
+      top: 70rem;
+  }
+  
+
+  &__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  &__span {
+      text-align: center;
+
+      @include respond-to ('lg') {
+          text-align: right;
+      }
+  }
+  &__items, &__span {
+      padding: 2rem 0;
+  }
+}

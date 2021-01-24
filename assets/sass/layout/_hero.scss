@@ -1,0 +1,58 @@
+.hero {
+    
+    &__bg-hero{
+        position: absolute;
+        top: 26rem;
+        width: 100%;
+        z-index: -5;
+        //background-color:brown;
+        
+
+        @include respond-to ('sm') {
+            top: 22rem;
+            //background-color: purple;
+        }
+
+        @include respond-to ('md') {
+            top: 22rem;
+            //background-color: yellow;
+        }
+
+        @include respond-to ('lg') {
+            top: 7rem;
+            //background-color: red;
+        }
+
+        @include respond-to ('xl') {
+            top: 5rem;
+            //background-color: blue;
+        }
+
+        @include respond-to ('xxl') {
+            top: 5rem;
+            //background-color: green;
+        }
+
+    }
+
+    &__title {
+        padding: 3rem 0 0 0;
+
+        @include respond-to ('md') {
+            padding: 1.5rem 0 0 0;
+        }
+
+        @include respond-to ('lg') {
+            padding: 6.5rem 0 0 0;
+        }
+
+        @include respond-to ('xl') {
+            padding: 5.5rem 0 0 0;
+        }
+    }
+
+    &__text {
+        padding: 1rem 0;
+    }
+    
+}
