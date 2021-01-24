@@ -22,7 +22,6 @@
         @include respond-to ('md') {
             font-size: $font-size-x-large;
         }
-
         @include respond-to ('xl') {
             font-size: $font-size-xx-large;
         }
