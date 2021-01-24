@@ -807,7 +807,7 @@ input {
   padding: 1rem 0;
 }
 .price__tarjeta--item-a {
-  opacity: 0;
+  visibility: hidden;
   padding: 1rem 0;
 }
 
