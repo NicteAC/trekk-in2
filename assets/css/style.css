@@ -768,7 +768,13 @@ input {
   padding: 0.5rem 1rem;
 }
 
-.price__tarjeta--button {
+.price__tarjeta--button-a {
+  background-color: #2ab7ca;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.price__tarjeta--button-b {
   background-color: #2ab7ca;
   padding: 1rem 1rem;
   margin: 1rem 0;
@@ -800,9 +806,17 @@ input {
 .price__tarjeta--item {
   padding: 1rem 0;
 }
+.price__tarjeta--item-a {
+  opacity: 0;
+  padding: 1rem 0;
+}
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+.free {
+  padding-top: 500%;
 }
 
 /*# sourceMappingURL=style.css.map */
