@@ -1,0 +1,24 @@
+.button {
+    font-family: $raleway;
+    font-weight: 400;
+    color: $white;
+    background-color: $ball-blue;
+    border: none;
+
+    &__regular{
+        padding: 0.3rem 1.5rem;
+    }
+
+    &__large{
+        padding: 0.8rem 2rem;
+        width: 100%;
+    }
+
+    &:hover{
+        background-color: $middle-blue;
+    }
+
+    &:focus{
+        background-color: $silver-chalice;
+    }
+}

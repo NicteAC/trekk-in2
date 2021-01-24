@@ -1,0 +1,38 @@
+//Colores
+$white: #FFF;
+$platinum: #EBEBEB;
+$gray: #BABABA;
+$dark-salmon: #EE9480;
+$melon: #F4BAAE;
+$pale-pink: #FADFDA;
+$ball-blue: #2AB7CA;
+$middle-blue: #77D1DD;
+$blue_lagoon: #B1E4EB;
+$onix: #333745;
+$raising_black: #221d23;
+$nickel: #726f73;
+$silver-chalice: #aeacaf;
+$lavender_gray: #c7c8cc;
+$spanish_gray: #8F9199;
+
+
+//Font family
+$raleway: 'Raleway', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+// font size
+$xxxxx-large: 50px;
+$xxxx-large: 45px;
+$xxx-large: 40px;
+$xx-large: 35px;
+$x-large: 30px;
+$large: 20px;
+$medium: 16px;
+$small: 14px;
+$x-small: 12px;
+//Break point
+$breakpoint: (
+    'sm' :(min-width: 576px),   
+    'md' :(min-width: 768px),   
+    'lg' :(min-width: 992px),   
+    'xl' :(min-width: 1200px)
+);

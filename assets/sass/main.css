@@ -1,0 +1,111 @@
+@-webkit-keyframes show1 {
+  0% {
+    fill: #f3ebea;
+  }
+  20% {
+    fill: #eed9d4;
+  }
+  40% {
+    fill: #ecbdb2;
+  }
+  60% {
+    fill: #eba393;
+  }
+  100% {
+    fill: #EE9480;
+  }
+}
+
+@keyframes show1 {
+  0% {
+    fill: #f3ebea;
+  }
+  20% {
+    fill: #eed9d4;
+  }
+  40% {
+    fill: #ecbdb2;
+  }
+  60% {
+    fill: #eba393;
+  }
+  100% {
+    fill: #EE9480;
+  }
+}
+
+@-webkit-keyframes show2 {
+  0% {
+    fill: #e2e6e7;
+  }
+  20% {
+    fill: #8fc6ce;
+  }
+  40% {
+    fill: #62c9d6;
+  }
+  60% {
+    fill: #49bbca;
+  }
+  100% {
+    fill: #2AB7CA;
+  }
+}
+
+@keyframes show2 {
+  0% {
+    fill: #e2e6e7;
+  }
+  20% {
+    fill: #8fc6ce;
+  }
+  40% {
+    fill: #62c9d6;
+  }
+  60% {
+    fill: #49bbca;
+  }
+  100% {
+    fill: #2AB7CA;
+  }
+}
+
+.button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #FFF;
+  background-color: #2AB7CA;
+  border: none;
+}
+
+.button__regular {
+  padding: 0.3rem 1.5rem;
+}
+
+.button__large {
+  padding: 0.8rem 2rem;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #77D1DD;
+}
+
+.button:focus {
+  background-color: #aeacaf;
+}
+
+.a-bar{
+    animation: show1 2s ease-in-out infinite;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0,0,1,1);
+    }
+
+    .b-bar{
+    animation: show2 2s ease-in-out infinite;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0,0,1,1);
+    }
+
+    
+/*# sourceMappingURL=main.css.map */
