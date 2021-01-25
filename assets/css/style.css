@@ -6,7 +6,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: auto;
   font: inherit;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
@@ -46,65 +46,68 @@ input {
 }
 
 .navbar__item--title, .navbar__item--button {
-  font-size: 1.25rem;
+  font-size: 100%;
   text-decoration: none;
   color: #221d23;
 }
 
 .hero__title {
-  font-size: 2.813rem;
-  font-weight: 700;
+  font-size: 200%;
+  font-weight: bolder;  
 }
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 380%;
+  }
+}
+
 .hero__text {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 2.188rem;
+  font-size: 90%;
+  line-height: 30px;
 }
 @media (min-width: 768px) {
   .hero__text {
-    font-size: 1.875rem;
+    font-size: 150%;
   }
 }
 @media (min-width: 1200px) {
   .hero__text {
-    font-size: 2.188rem;
+    font-size: 130%;
   }
 }
 
 .graph__title {
-  font-size: 2.188rem;
-  font-weight: 700;
+  font-size: 200%;
+  font-weight: bold;
 }
 @media (min-width: 1200px) {
   .graph__title {
-    font-size: 2.813rem;
+    font-size: 300%;
   }
 }
 .graph__text--title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 2.1rem;
+  font-size: 135%;
+  font-weight: bolder;
+  line-height: 20px;
 }
 @media (min-width: 1200px) {
   .graph__text--title {
-    font-size: 2.188rem;
-    line-height: 3rem;
+    font-size: 200%;
   }
 }
 .graph__text--paragraph {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.9rem;
+  font-size: 100%;
+  line-height: 30px;
 }
 @media (min-width: 992px) {
   .graph__text--paragraph {
-    line-height: 2.1rem;
+   font-size: 50%;
   }
 }
 @media (min-width: 1200px) {
   .graph__text--paragraph {
-    font-size: 1.875rem;
-    line-height: 2.6rem;
+    font-size: 100%;
+    line-height: 30px;
   }
 }
 
@@ -747,19 +750,18 @@ input {
 }
 .footer__items {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  font-size: 50%;
+  text-align: left;
 }
 .footer__span {
   text-align: center;
+  font-size: 50%;
 }
 @media (min-width: 992px) {
   .footer__span {
     text-align: right;
   }
-}
-.footer__items, .footer__span {
-  padding: 2rem 0;
 }
 
 .navbar__item--button {
