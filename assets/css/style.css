@@ -57,7 +57,7 @@ input {
 }
 @media (min-width: 1200px) {
   .hero__title {
-    font-size: 380%;
+    font-size: 300%;
   }
 }
 
@@ -72,7 +72,8 @@ input {
 }
 @media (min-width: 1200px) {
   .hero__text {
-    font-size: 130%;
+    font-size: 90%;
+    word-spacing: 5px;
   }
 }
 
@@ -127,12 +128,23 @@ input {
   }
 }
 .price__tarjeta--card-title {
-  font-size: 1.875rem;
-  font-weight: 400;
+  font-size: 120%;  
+}
+@media (min-width: 1200px) {
+  .price__tarjeta--card-title {
+    font-size: 200%;
+    font-weight: bolder;
+  }
+}
+@media (min-width: 1200px) {
+  .price__tarjeta--card-price {
+    font-size: 100%;
+    font-weight: bolder;
+  }
 }
 .price__tarjeta--card-price {
-  font-size: 3.125rem;
-  font-weight: 700;
+  font-size: 230%;
+  font-weight: bolder;
 }
 @media (min-width: 992px) {
   .price__tarjeta--card-price {
@@ -141,22 +153,26 @@ input {
 }
 @media (min-width: 1200px) {
   .price__tarjeta--card-price {
-    font-size: 3.125rem;
+    font-size: 300%;
   }
 }
 .price__tarjeta--item {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 75%;
+}
+@media (min-width: 1200px) {
+  .price__tarjeta--item {
+    font-size: 110%;
+  }
 }
 
 .footer {
-  font-size: 1.25rem;
+  font-size: 100%;
   color: #fff;
 }
 @media (min-width: 576px) {
   .footer {
-    font-size: 1.875rem;
+    font-size: 80%;
   }
 }
 
@@ -750,18 +766,19 @@ input {
 }
 .footer__items {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  font-size: 50%;
-  text-align: left;
 }
 .footer__span {
   text-align: center;
-  font-size: 50%;
 }
 @media (min-width: 992px) {
   .footer__span {
     text-align: right;
   }
+}
+.footer__items, .footer__span {
+  padding: 2rem 0;
 }
 
 .navbar__item--button {
