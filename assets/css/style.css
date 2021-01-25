@@ -80,6 +80,8 @@ input {
 .graph__title {
   font-size: 200%;
   font-weight: bold;
+  padding-bottom: 10%;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .graph__title {
@@ -94,6 +96,7 @@ input {
 @media (min-width: 1200px) {
   .graph__text--title {
     font-size: 200%;
+    margin-left: 25%;
   }
 }
 .graph__text--paragraph {
@@ -109,6 +112,8 @@ input {
   .graph__text--paragraph {
     font-size: 100%;
     line-height: 30px;
+    margin-top: 5%;
+    margin-left: 25%;
   }
 }
 
@@ -561,6 +566,7 @@ input {
   top: 26rem;
   width: 100%;
   z-index: -5;
+  text-align: left;
 }
 @media (min-width: 576px) {
   .hero__bg-hero {
@@ -580,6 +586,7 @@ input {
 @media (min-width: 1200px) {
   .hero__bg-hero {
     top: 5rem;
+    width: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -638,10 +645,7 @@ input {
     top: 50rem;
   }
 }
-.graph__title {
-  padding: 2rem;
-  text-align: center;
-}
+
 .graph__svg {
   display: flex;
   align-items: center;
